@@ -1,70 +1,36 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tech Stack
 
-## Available Scripts
+* React,
+* CSS Modules,
+* Reactflow
+* React-Paginate,
+* React-router,
+* Dayjs
 
-In the project directory, you can run:
+## Workflow list page
+![image](https://user-images.githubusercontent.com/97614113/230796562-f295e7a0-5232-4143-b180-6d91c8b24c26.png)
 
-### `npm start`
+* This page lists the Name, Input type and creation date.
+* On clicking to any of the lists the user is redirected to the Workflow design page where one can work on canvas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Workflow designer page
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/97614113/230796669-2b1d34a3-ba5d-4827-ae23-1f81ea84895c.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* It has Workflow name at the top.
+* A input node with same input type as mentioned in the workflow list.
+* It lists a total of 99 modules with 5 modules in each page.
+* The bottom of modules section has the pagination to navigate between the pages.
+* User can drag and drop the modules into the canvas.
+* Users acan delete nodes in the canvas by pressing backspave keys.
+* Each module has input type (on their left), output type(on their right) and a name.
+* The edges are removable and updatable, i.e., they can be removed or the target can be changed
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/97614113/230796964-2e865407-fd48-4156-b81e-4dc73df18ee6.png">
+<img width="957" alt="image" src="https://user-images.githubusercontent.com/97614113/230797013-d3fe6859-5a7e-40be-bffa-f8383ad89e56.png">
 
-### `npm run build`
+* Modules in the canvas have valid and invalid states. Module is invalid it has no input edge and it is valid if it has input edge.
+* Invalid nodes are marked with red border.
+* This does not apply to the input node, input node is always valid
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
