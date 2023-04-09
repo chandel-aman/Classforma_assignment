@@ -1,0 +1,36 @@
+@import url("../color.css");
+
+.workflow-design {
+  width: 100%;
+}
+
+.workflow-design .header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--border-color);
+  font-weight: 600;
+}
+
+.workflow-design .container {
+  display: flex;
+  flex-direction: row;
+}
+.workflow-design .container .modules{
+    border-right: 2px solid var(--border-color);
+    width: 25rem;
+}
+
+.workflow-design .container .modules .module-header {
+  border-bottom: 2px solid var(--border-color);
+  position: relative;
+}
+
+.workflow-design .container .modules div h5 {
+  margin: 0;
+  padding: 0.5rem 0 1rem 1rem;
+}
+
+.workflow-design .container .canvas{
+  width: 100%;  
+}

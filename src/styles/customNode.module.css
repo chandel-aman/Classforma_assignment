@@ -1,0 +1,57 @@
+.module {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.module span {
+  border: 2px solid var(--border-color);
+  padding: 5px;
+  display: block;
+}
+
+.module.unconnected span {
+  border: 2px solid red;
+}
+
+.module span:nth-child(1),
+.module span:nth-child(3) {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 8px;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.module span:nth-child(1) {
+  border-right: 0;
+  border-radius: 8px 0 0 8px;
+}
+
+.module span:nth-child(2) {
+  width: calc(100% - 4rem);
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  background-color: #d9e5f0;
+}
+
+.module span:nth-child(3) {
+  border-left: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.handle {
+  background-color: #555;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.module-container:hover .handle {
+  opacity: 1;
+}

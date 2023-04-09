@@ -1,0 +1,79 @@
+@import url("../color.css");
+
+.workflow-list {
+  width: 100%;
+}
+
+.workflow-list .header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--border-color);
+  font-weight: 600;
+}
+
+.table-container {
+  position: absolute;
+  top: 5rem;
+  left: calc((100vw - 35rem)/2);
+  height: 35rem;
+  overflow-y: scroll;
+}
+
+/* Style the scrollbar */
+.table-container::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+/* Style the thumb */
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #96b7d6;
+  border-radius: 9999px;
+}
+
+
+.workflow-list .table-container table {
+  width: 35rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.workflow-list .table-container table thead tr {
+  background-color: #4472c4;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.workflow-list .table-container table thead tr th{
+    padding: 6px 0 10px;
+}
+
+.workflow-list .table-container table tbody tr{
+    cursor: pointer;
+}
+
+.workflow-list .table-container table tbody tr:nth-child(odd) {
+  background-color: #cfd5ea;
+}
+
+.workflow-list .table-container table tbody tr:nth-child(even) {
+  background-color: #e9ebf5;
+}
+
+.workflow-list .table-container table tbody tr:hover{
+    background-color: #4472c4;
+    color: #fff;
+}
+
+.workflow-list .table-container table tbody td {
+  padding-left: 10px;
+}
+
+.workflow-list .table-container table tbody tr td:first-child{
+    text-decoration: underline;
+}
+
+.workflow-list .table-container table tbody tr td:nth-child(2){
+    text-transform: uppercase;
+}
